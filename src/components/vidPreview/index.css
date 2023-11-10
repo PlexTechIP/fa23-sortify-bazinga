@@ -1,0 +1,29 @@
+.VidPreview {
+    display: flex;
+}
+
+.Thumbnail {
+    background-image: url('./TestPics/grn.jpg');
+    background-size: 'cover'; 
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    height: 200px;
+    width: 150px;
+}
+
+.TmBg {
+
+}
+
+.Platform {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    justify-content: flex-end;
+
+}
