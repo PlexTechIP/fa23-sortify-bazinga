@@ -1,0 +1,33 @@
+/* App.css */
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('6193493.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+  .heroTitle {
+    color: white; 
+    font-size: 5rem; 
+    margin: 0;
+    text-align: left; 
+    padding-left: 10%;
+    margin: 0;
+    position: absolute; 
+    top: 35%; 
+    transform: translateY(-50%)
+  }
+
+  .heroDesc {
+    color: white; 
+    font-size: 2rem; 
+    margin: 0;
+    text-align: left; 
+    padding-left: 10%;
+    margin: 0;
+    position: absolute; 
+    top: 45%; 
+    transform: translateY(-50%)
+  }
