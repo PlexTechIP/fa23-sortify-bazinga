@@ -1,0 +1,58 @@
+*{
+    background-color: black;
+}
+img {
+    width: 30px;
+}
+
+h1 {
+    background-color: rgba(128, 128, 128, 0);
+}
+.dash {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.286);
+    width: 70%;
+    margin: auto;
+    color: white;
+}
+
+.tiktok{
+    background-color: rgba(128, 128, 128, 0);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.inst{
+    background-color: rgba(128, 128, 128, 0);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.box {
+    background-color: rgb(26, 25, 25);
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+.plus{
+    width: 10%;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(26, 25, 25);
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+}
+
+.box:hover{
+    background-color: rgb(68, 66, 66);
+}
+
+.plus:hover{
+    background-color: rgb(68, 66, 66);
+}
