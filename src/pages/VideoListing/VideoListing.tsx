@@ -6,8 +6,8 @@ function VideoListing() {
         <div className='SearchBar'>Searchbar
           <div className="Search"><p className="SEARCHTxt">SEARCH</p></div>
           <div className='Sort'><p className="SortTxt">Sort</p></div>
-          <div className="Reccommend">
-              <div className="Reccommended">Reccommended</div>
+          <div className="Recommend">
+              <div className="Recommended">Recommended</div>
               <div className="RecTags">Lorem</div>
               <div className="RecTags">Lorem</div>
               <div className="RecTags">Lorem</div>
