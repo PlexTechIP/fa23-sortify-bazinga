@@ -15,7 +15,7 @@ function VideoListing() {
           </div>
         </div>
         <div className="Flex">
-        {/* <div className="MediaMenu"></div> */}
+         <div className="MediaMenu"></div>
           <div className="MenuParent">
             <div className="Wrapper">
               <div className="PlatformLogo">
