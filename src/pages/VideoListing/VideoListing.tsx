@@ -1,63 +1,236 @@
+import ControlCenter from "../../components/ControlCenter"
+import Navbar from "../../components/Navbar"
+import VidPreview from "../../components/vidPreview"
+import SocialMenu from "../../components/SocialMenu"
 import "./VideoListing.css"
 
 function VideoListing() {
+    const arrr = [
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        },
+        {
+            img: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg',
+            platform: 'https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png',
+            href: 'https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg'
+        },
+        {
+            img: 'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-superJumbo.jpg?quality=75&auto=webp',
+            platform: 'https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png',
+            href: 'https://www.dni.gov/nctc/groups/hizballah.html'
+        }
+    ]
+
     return (
-      <div className="Background">
-        <div className="NavBar">Nav</div>
-        <div className='SearchBar'>Searchbar
-          <div className="Search"><p className="SEARCHTxt">SEARCH</p></div>
-          <div className='Sort'><p className="SortTxt">Sort</p></div>
-          <div className="Recommend">
-              <div className="Recommended">Recommended</div>
-              <div className="RecTags">Lorem</div>
-              <div className="RecTags">Lorem</div>
-              <div className="RecTags">Lorem</div>
-              <div className="RecTags">Lorem</div>
-          </div>
+        <div className="Background">
+            <Navbar />
+            <div className="Flex">
+                <SocialMenu />
+                <div className="Library">
+                    <div className='ControlCenter'><ControlCenter recommended={['a', 'a', 'a.', 'a']} /></div>
+                    <div className="flex-grid">
+                        {
+                            arrr.map((element) => {
+                                return (
+                                    <VidPreview href={element.href} img={element.img} platform={element.platform} />
+                                )
+                            })
+                        }
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="Flex">
-         <div className="MediaMenu"></div>
-          <div className="MenuParent">
-            <div className="Wrapper">
-              <div className="PlatformLogo">
-                <img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img>
-                <img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img>
-                <img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img>
-                <img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img>
-                <img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img>
-              </div>
-            </div>
-          </div>
-          <div className="Library">
-            <div className="flex-grid">
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-            </div>
-            <div className="flex-grid">
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>          
-            </div>
-            <div className="flex-grid">
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>
-              <div className="col"><img src="https://img.freepik.com/premium-vector/gradient-social-media-logo_197792-2599.jpg"></img></div>          
-            </div>
-        
-          </div>
-        </div>
-      </div> 
     )
-  }
-  
-  export default VideoListing
+}
+
+export default VideoListing

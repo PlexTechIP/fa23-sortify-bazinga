@@ -1,5 +1,4 @@
 import './index.css';
-import pltfm from './TestPics/tt.jpg'
 
 const VidPreview = ({img, platform, href}:{img: string, platform: string, href: string}) => {
 
@@ -10,7 +9,7 @@ const VidPreview = ({img, platform, href}:{img: string, platform: string, href: 
     return (
         <div className="VidPreview">
             <a className="Thumbnail" href={href} style={thmbStyle}>
-                <img className='Platform' src={pltfm} alt=''/>
+                <img className='Platform' src={platform} alt=''/>
             </a>
         </div>
     )

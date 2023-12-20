@@ -7,21 +7,26 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import Dashboard from './pages/Dashboard/Dashboard';
+import Dashboard from './pages/Dashboard/Dashboard';
+import VideoListing from './pages/VideoListing/VideoListing';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />
   }, 
-  // {
-  //   path: "/dashboard",
-  //   element: <Dashboard />
-  // },
-  // {
-  //   path: "*",
-  //   element: <NotFound />
-  // }
+  {
+    path: "/dashboard",
+    element: <Dashboard />
+  },
+  {
+    path: '/VideoListing',
+    element: <VideoListing />
+  }
+//   {
+//     path: "*",
+//     element: <NotFound />
+//   }
 ])
 
 const root = ReactDOM.createRoot(

@@ -1,125 +1,50 @@
-.Background{
-    background-image: url("/Users/daniel/Sortify/fa23-sortify-bazinga/src/pages/VideoListing/background.png");
+.Background {
+    background-image: url("./background.png");
     background-size: cover;
     height: fill;
 }
-.NavBar{
-background-color: aquamarine;
-width: fill;
-height: 112px;
+
+.NavBar {
+    background-color: aquamarine;
+    width: fill;
+    height: 112px;
 }
 
-.SearchBar{
-    display: flex;
-    border-radius: 25px;
-    background-color:#42505C;
-    width: 1607px;
-    height: 147px;
-    position: relative;
-    margin: 95px 95px 62px 204px;
-}
-.Search{
-    display: flex;
-    background-color:white;
-    border-radius: 25px;
-    width: 680px;
-    height: 68px;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.SEARCHTxt{
-    display: flex;
-    color: black;
-    opacity: 0.38;
-    font-size: 40px;
-}
-.Sort{
-    display: flex;
-    background-color: white;
-    border-radius: 25px;
-    height: 50px;
-    width: 75px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    right: 500px;
-
-}
-.SortTxt{
-    color: black;
-}
-
-.Reccommend{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
-
-.Reccommended{
-    background-color: white;
-    height: 30px;
-    border-radius: 25px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-
-.RecTags{
+.RecTags {
     flex: 1;
 }
 
-.Flex{
-    display:flex;
+.Flex {
+    display: flex;
     flex-direction: row;
 }
 
-.MenuParent{
-background-color: #D9D9D9;
-opacity: 55%;
-height:859px;
-flex-direction: column;
-justify-content: flex-start;
-width: 160px;
-border-top-right-radius: 25px;
-border-bottom-right-radius: 25px;
-}
-
-.PlatformLogo{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;    
-    align-items: center;
-}
-img{
-    width:100px;
-    height: 100px;
-    margin-top: 20px;
-}
-
 .Library {
-margin-top: 68px;
-width:1592px;
+    margin-top: 3%;
+    width: 1592px;
+    row-gap: 25px;
 }
+
 .flex-grid {
     display: flex;
-    /*background-color: #111921; */
-    margin-left: 213px;
-    
-  }
-  .col {
+    margin: 0 25px 0 75px;
+    justify-content: space-between;
+    row-gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.col {
     flex: 1;
     margin: 10px 18px 10px 18px;
     background-color: #42505C;
     height: 200px;
-  }
+}
 
+.ControlCenter {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    top: 0;
+}
