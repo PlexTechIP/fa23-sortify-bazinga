@@ -1,33 +1,77 @@
-/* App.css */
-.background {
-    width: 100%;
-    height: 100vh;
-    background-image: url('6193493.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+/*              */
+/* HERO SECTION */
+/*              */
+
+.hero-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../public/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-  .heroTitle {
-    color: white; 
-    font-size: 5rem; 
-    margin: 0;
-    text-align: left; 
-    padding-left: 10%;
-    margin: 0;
-    position: absolute; 
-    top: 35%; 
-    transform: translateY(-50%)
-  }
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 20rem;
+  height: 70%;
+}
 
-  .heroDesc {
-    color: white; 
-    font-size: 2rem; 
-    margin: 0;
-    text-align: left; 
-    padding-left: 10%;
-    margin: 0;
-    position: absolute; 
-    top: 45%; 
-    transform: translateY(-50%)
-  }
+.hero-content {
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.hero-title {
+  color: white;
+  font-size: 5rem;
+  margin: 0;
+  text-align: left;
+}
+
+.hero-desc {
+  color: darkgrey;
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
+}
+
+.hero-media {
+  color: white;
+}
+
+/*              */
+/*   CONTENT    */
+/*              */
+
+.content-bg {
+  background-color: #141C23;
+  padding: 2rem;
+  color: white;
+}
+
+.content {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.feature-steps {
+  margin: auto;
+  width: 50%;
+}
+
+.feature-steps li {
+  margin: 1rem;
+  text-align: left;
+}
+
+.footer-bg {
+  background-color: black;
+  padding: 2rem;
+  color: white;
+}
