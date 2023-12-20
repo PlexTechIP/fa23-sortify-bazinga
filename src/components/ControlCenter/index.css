@@ -2,7 +2,7 @@
     background-color: #42505c;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 75%);
     border-radius: 15px;
-    width: 800px;
+    width: 650px;
     height: 125px;
     align-items: center;
 }
@@ -15,7 +15,7 @@
 
 .sortify-button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 25%);
-    margin: 50px;
+    margin: 25px;
     background-color: white;
     color: #727272;
     border-radius: 20px;
@@ -24,7 +24,7 @@
     font-size: 20px;
     text-align: center;
     cursor: pointer;
-    padding: 9px 40px;
+    padding: 9px 30px;
 }
 
 .row2 {

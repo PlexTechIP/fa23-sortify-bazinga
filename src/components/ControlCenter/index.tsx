@@ -8,7 +8,7 @@ const ControlCenter = ({recommended}:{recommended: Array<String>}) => {
         <div className='backdrop'>
             <div className='row1'>
                 <SearchBar/>
-                <button className='sortify-button'>Sortify</button>
+                <button className='sortify-button'>Sort</button>
             </div>
             <div className='row2'>
                 <Recommended favs={arr}/>
