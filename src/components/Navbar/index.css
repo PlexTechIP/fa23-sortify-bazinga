@@ -8,12 +8,13 @@
 
 .logo-container {
   display: flex;
-  align-items: center; /* Align the logo vertically in the center */
-  margin-right: 10px; /* Adds spacing between the logo and buttons */
+  align-items: center;
+  margin-right: 1rem;
 }
 
 .logo {
-  height: 40px;
+  height: 35px;
+  width: 35px;
 }
 
 .nav-buttons {
@@ -23,15 +24,19 @@
 }
 
 .nav-button, .login-button {
-  background-color: #000000; /* Black background for all buttons. */
+  background-color: black; /* Black background for all buttons. */
   color: white; /* White text color for all buttons */
   border: 2px solid rgb(68, 68, 68); /* White border */
   border-radius: 10px; /* Rounded rectangle border */
   padding: 5px 10px; /* Adds padding to the buttons for better styling */
   font-weight: bold; /* Bold text */
-  font-family: 'Inter', sans-serif; /* Use the Inter font taken from Figma*/
 }
 
+.nav-button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
 
 .login-button {
   background-color: #0070F3; /* Blue background for the Login button taken from Figma */

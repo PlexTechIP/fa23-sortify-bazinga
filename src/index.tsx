@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     element: <Dashboard />
   },
   {
-    path: '/VideoListing',
+    path: '/videos',
     element: <VideoListing />
   }
 //   {

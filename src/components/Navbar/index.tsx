@@ -1,15 +1,15 @@
+import { Link } from "react-router-dom";
 import "./index.css"
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo-container">
-        <img src="logo.png" alt="Logo" className="logo" />
+        <Link to="/"><img src="/logo.png" alt="Logo" className="logo" /></Link>
       </div>
       <div className="nav-buttons">
-        <button className="nav-button">Library</button>
-        <button className="nav-button">Accounts</button>
-        <button className="nav-button">Features</button>
+        <Link to="/videos"><button className="nav-button">Library</button></Link>
+        <Link to="/dashboard"><button className="nav-button">Account</button></Link>
         <button className="nav-button login-button">Login</button>
       </div>
     </div>
