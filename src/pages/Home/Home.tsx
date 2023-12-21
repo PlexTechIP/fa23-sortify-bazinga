@@ -31,7 +31,7 @@ const Home: React.FC = () => {
 
       <div className="footer-bg">
         <div className="footer">
-          Made by BAZINGA
+          Made by PlexTech's BAZINGA
         </div>
       </div>
     </>
