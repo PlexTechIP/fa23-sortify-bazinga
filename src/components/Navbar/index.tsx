@@ -19,11 +19,11 @@ const Navbar = () => {
     boxShadow: 24,
     p: 4,
   };
-  
+
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  
+
   return (
     <div className="navbar">
       <div className="logo-container">
@@ -34,29 +34,29 @@ const Navbar = () => {
         <Link to="/dashboard"><button className="nav-button">Account</button></Link>
         <button className="nav-button login-button" onClick={handleOpen}>Login</button>
         <Modal
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
-        open={open}
-        onClose={handleClose}
-        closeAfterTransition
-        slots={{ backdrop: Backdrop }}
-        slotProps={{
-          backdrop: {
-            timeout: 500,
-          },
-        }}
-      >
-        <Fade in={open}>
-          <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
-              Sign In
-            </Typography>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              This is where the Log in Goes
-            </Typography>
-          </Box>
-        </Fade>
-      </Modal>
+          aria-labelledby="transition-modal-title"
+          aria-describedby="transition-modal-description"
+          open={open}
+          onClose={handleClose}
+          closeAfterTransition
+          slots={{ backdrop: Backdrop }}
+          slotProps={{
+            backdrop: {
+              timeout: 500,
+            },
+          }}
+        >
+          <Fade in={open}>
+            <Box sx={style}>
+              <Typography id="transition-modal-title" variant="h6" component="h2">
+                Sign In
+              </Typography>
+              <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                This is where the Log in Goes
+              </Typography>
+            </Box>
+          </Fade>
+        </Modal>
       </div>
     </div>
   );
@@ -68,4 +68,3 @@ export default Navbar;
 
 
 
- 
