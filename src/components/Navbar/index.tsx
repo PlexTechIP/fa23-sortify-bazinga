@@ -6,9 +6,6 @@ import { Box } from '@mui/material'
 import { Typography } from '@mui/material'
 import Backdrop from '@mui/material/Backdrop';
 import Fade from '@mui/material/Fade';
-import Button from '@mui/material/Button';
-
-
 
 const Navbar = () => {
   const style = {
