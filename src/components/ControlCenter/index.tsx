@@ -5,6 +5,7 @@ import React from 'react'
 import { Modal } from '@mui/material'
 import { Box } from '@mui/material'
 import { Typography } from '@mui/material'
+import { Button } from '@mui/material'
 
 const style = {
     display: 'flex',
@@ -17,7 +18,8 @@ const style = {
     borderRadius: '10px',
     boxShadow: 24,
     p: 4,
-    textColor: 'white'
+    color: '#FFF',
+    justifyContent: 'space-between'
   };
 
 const ControlCenter = ({ recommended }: { recommended: Array<String> }) => {
@@ -38,12 +40,55 @@ const ControlCenter = ({ recommended }: { recommended: Array<String> }) => {
                     aria-describedby="modal-modal-description"
                 >
                     <Box sx={style}>
-                        <Typography id="modal-modal-title" variant="h6" component="h2">
-                            Text in a modal
-                        </Typography>
-                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                        </Typography>
+                        <div>
+                            <Typography id="modal-modal-title">Upload Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
+                            <hr />
+                            <div className='filter'>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Last hour</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Today</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>This week</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>This month</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>This year</Button>
+                            </div>
+                        </div>
+                        <div>
+                            <Typography id="modal-modal-title">Content Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
+                            <hr />
+                            <div className='filter'>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Short Video</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Full Video</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Slideshow</Button>
+                            </div>
+                        </div>
+                        <div>
+                            <Typography id="modal-modal-title">Video Length&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
+                            <hr />
+                            <div className='filter'>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Under 30 seconds</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>30-60 seconds</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>1-3 minutes</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>3-10 minutes</Button>
+                            </div>
+                        </div>
+                        <div>
+                            <Typography id="modal-modal-title">Sort By&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
+                            <hr />
+                            <div className='filter'>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Relevance</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Upload date</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>View count</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Rating</Button>
+                            </div>
+                        </div>
+                        <div>
+                            <Typography id="modal-modal-title">List In&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
+                            <hr />
+                            <div className='filter'>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Ascending order</Button>
+                                <Button variant="text" color='inherit' size='medium' style={{textTransform: 'none'}}>Descending order</Button>
+                            </div>
+                        </div>
+                        
                     </Box>
                 </Modal>
             </div>
