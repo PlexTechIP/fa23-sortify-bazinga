@@ -33,3 +33,9 @@
     margin: 0 32px;
 }
 
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #a9a9a9
+}
